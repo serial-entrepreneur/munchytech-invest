@@ -4,24 +4,23 @@ version = "0.1.0"
 description = "A modular, scalable, and AI-driven algorithmic trading system"
 authors = ["Your Name <your.email@example.com>"]
 readme = "README.md"
+packages = [{include = "mt_inv"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-kiteconnect = "^4.1.0"
-pandas = "^2.0.0"
-numpy = "^1.24.0"
-pyspark = "^3.4.0"
-pyarrow = "^12.0.0"
-python-dotenv = "^1.0.0"
-loguru = "^0.7.0"
-pytest = "^7.4.0"
-black = "^23.7.0"
-flake8 = "^6.1.0"
-mypy = "^1.5.0"
+python = "^3.11"
+kiteconnect = "^5.0.1"
+pandas = "^2.2.3"
+numpy = "^2.2.6"
+pyspark = "^4.0.0"
+pyarrow = "^20.0.0"
+python-dotenv = "^1.1.0"
+loguru = "^0.7.3"
+
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
 ipykernel = "^6.25.0"
+pytest-cov = "^6.1.1"
 
 [build-system]
 requires = ["poetry-core"]
@@ -29,11 +28,11 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.black]
 line-length = 88
-target-version = ['py39']
+target-version = ['py311']
 include = '\.pyi?$'
 
 [tool.mypy]
-python_version = "3.9"
+python_version = "3.11"
 warn_return_any = true
 warn_unused_configs = true
 disallow_untyped_defs = true

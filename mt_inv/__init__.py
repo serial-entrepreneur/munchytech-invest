@@ -1,0 +1,3 @@
+"""
+Quantitative Trading Engine package.
+""" 
