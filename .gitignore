@@ -194,3 +194,6 @@ cython_debug/
 .cursorindexingignore
 
 .vscode/
+
+# Kite Connect
+access_token.json
