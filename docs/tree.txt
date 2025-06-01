@@ -1,0 +1,12 @@
+.
+├── docs
+│   ├── blueprint.md
+│   ├── dev_workflow.md
+│   ├── prd.md
+│   └── tree.txt
+├── LICENSE
+├── poetry.lock
+├── pyproject.toml
+└── README.md
+
+1 directory, 8 files
